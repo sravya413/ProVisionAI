@@ -51,7 +51,7 @@ def test_gemini_api_key():
         response = model.generate_content("Hello, world!")
         
         if response:
-            logger.info("Gemini API key test successful")
+            logger.info("Gemini API key test successful !")
             return True
         else:
             logger.error("Gemini API test failed - no response")
