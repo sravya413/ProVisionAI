@@ -25,7 +25,7 @@ logging.basicConfig(level=logging.INFO,
 logger = logging.getLogger(__name__)
 
 # Configure API key for Gemini
-GEMINI_API_KEY = "AIzaSyBlW8IzBBAQp0EAF5yC2jDy0xzOyKSlsEk"  # <-- Replace with your actual Gemini API key
+GEMINI_API_KEY = "api key"  # <-- Replace with your actual Gemini API key
 
 # Ensure upload folder exists
 UPLOAD_FOLDER = os.path.join('static', 'uploads')
@@ -398,7 +398,7 @@ if __name__ == '__main__':
     print("="*80)
     
     # Modified messages to be more helpful
-    if not GEMINI_API_KEY or GEMINI_API_KEY.strip() == "AIzaSyBlW8IzBBAQp0EAF5yC2jDy0xzOyKSlsEk":
+    if not GEMINI_API_KEY or GEMINI_API_KEY.strip() == "api key":
         print("\n⚠ WARNING: You need to configure a valid Gemini API key")
         print("⚠ The app will run but image analysis will use local fallback instead of Gemini API")
     else:
